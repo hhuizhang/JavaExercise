@@ -28,8 +28,6 @@ public class WildCardUse {
          strList.add("Zhang Hui");
          printlist(strList); 
          
-         List<? super Integer> intList1 = new ArrayList<Integer>();
-         
 
 	}
 	
