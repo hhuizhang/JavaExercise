@@ -4,6 +4,7 @@ import java.util.Vector;
 
 public class OldContainerTest {
 	public static void main(String []agrs){
+		@SuppressWarnings({"unchecked"})
 		Vector floatValues = new Vector();
 		floatValues.add(10.0f);
 		floatValues.add(100.0);

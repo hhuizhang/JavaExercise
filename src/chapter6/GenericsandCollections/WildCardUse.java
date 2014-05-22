@@ -14,6 +14,7 @@ public class WildCardUse {
 			System.out.println("[" + l +"]");
 		}
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
          List<Integer> intList  = new ArrayList<Integer>();
@@ -26,6 +27,8 @@ public class WildCardUse {
          strList.add("am ");
          strList.add("Zhang Hui");
          printlist(strList); 
+         
+         List<? super Integer> intList1 = new ArrayList<Integer>();
          
 
 	}
