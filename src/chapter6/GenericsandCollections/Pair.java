@@ -1,6 +1,6 @@
 package chapter6.GenericsandCollections;
 
-public class Pair<T1, T2> {
+class Pair<T1, T2> {
 	
 	 T1 Object1;
 	 T2 Object2;

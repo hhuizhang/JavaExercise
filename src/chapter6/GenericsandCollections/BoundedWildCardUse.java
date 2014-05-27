@@ -3,7 +3,7 @@ package chapter6.GenericsandCollections;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BoundedWildCardUse {
+ class BoundedWildCardUse {
 	public static Double sum(List<? extends Number> numList){
 		Double result = 0.0;
 		for(Number num:numList){

@@ -1,6 +1,6 @@
 package chapter6.GenericsandCollections;
 
-public class BoxPrinterTest1 {
+class BoxPrinterTest1 {
 	
 	public static void main(String []args){
 		BoxPrinter<Integer> value1 = new BoxPrinter<Integer>(new Integer(10));

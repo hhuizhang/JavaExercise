@@ -2,7 +2,7 @@ package chapter6.GenericsandCollections;
 
 import java.util.Vector;
 
-public class OldContainerTest {
+class OldContainerTest {
 	public static void main(String []agrs){
 		@SuppressWarnings({"unchecked"})
 		Vector floatValues = new Vector();

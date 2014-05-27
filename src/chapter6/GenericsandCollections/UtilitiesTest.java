@@ -3,7 +3,7 @@ package chapter6.GenericsandCollections;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UtilitiesTest {
+class UtilitiesTest {
 	public static void main(String[] args){
 		List<Integer> intList = new ArrayList<Integer>();
 		intList.add(10);

@@ -1,6 +1,6 @@
 package chapter6.GenericsandCollections;
 
-public class BoxPrinter<T> {
+class BoxPrinter<T> {
     private T obj;
     
     public BoxPrinter(T val){

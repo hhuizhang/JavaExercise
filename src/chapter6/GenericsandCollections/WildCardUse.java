@@ -3,7 +3,7 @@ package chapter6.GenericsandCollections;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WildCardUse {
+class WildCardUse {
 
 	/**
 	 * @param args
@@ -27,7 +27,6 @@ public class WildCardUse {
          strList.add("am ");
          strList.add("Zhang Hui");
          printlist(strList); 
-         
 
 	}
 	
