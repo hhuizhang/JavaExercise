@@ -15,16 +15,16 @@ public class Canvas {
 	 private static ArrayList<Shape> shapeList = new ArrayList<Shape>();
 
 	 public void addNewShape(FriendlyType friendlyType, ShapeType shapeType){
-		/* final DisplayFriendlyFactory display = new DisplayFriendlyFactory();
+		 final DisplayFriendlyFactory display = new DisplayFriendlyFactory();
 		 final PrinterFriendlyFactory printer = new PrinterFriendlyFactory();
 		 switch(friendlyType){
 		 case Display:			 
-			 Shape shape1 = display.getShape(shapeType);
+			 Shape shape1 = (Shape) display.getShape(shapeType);
 			 shapeList.add(shape1);
 		 case Printer:
-			 Shape shape2 = printer.getShape(shapeType);
+			 Shape shape2 = (Shape) printer.getShape(shapeType);
 			 shapeList.add(shape2);
-		 }*/
+		 }
 		 
 			Shape shape = ShapeFactory.getShape(shapeType);
 			shapeList.add(shape);
