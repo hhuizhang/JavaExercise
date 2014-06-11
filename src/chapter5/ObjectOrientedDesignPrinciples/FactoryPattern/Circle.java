@@ -1,6 +1,6 @@
 package chapter5.ObjectOrientedDesignPrinciples.FactoryPattern;
 
-public class Circle implements Shape{
+class Circle implements Shape{
 	private int xPos, yPos;
 	private int radius;
 	

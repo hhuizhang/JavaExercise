@@ -2,11 +2,13 @@ package chapter5.ObjectOrientedDesignPrinciples.FactoryPattern;
 
 
 
+
+
 enum SourceType{
 	Circle, Rectangle
 }
 
-public class ShapeFactory {
+class ShapeFactory {
 	
 	public static Shape getShape(SourceType sourceType){
 		switch(sourceType){
@@ -17,5 +19,6 @@ public class ShapeFactory {
 		}
 		return null;
 	}
+
 
 }

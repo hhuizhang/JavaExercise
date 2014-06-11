@@ -1,6 +1,6 @@
 package chapter5.ObjectOrientedDesignPrinciples.AbstractFactoryPattern;
 
-public class DisplayFriendlyFactory implements ShapeFactory {
+class DisplayFriendlyFactory implements ShapeFactory {
 
 	@Override
 	public  Shape getShape(ShapeType shapeType) {

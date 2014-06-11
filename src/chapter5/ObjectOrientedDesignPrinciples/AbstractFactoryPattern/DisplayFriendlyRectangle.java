@@ -1,6 +1,6 @@
 package chapter5.ObjectOrientedDesignPrinciples.AbstractFactoryPattern;
 
-public class DisplayFriendlyRectangle implements DisplayFriendlyShape{
+class DisplayFriendlyRectangle implements DisplayFriendlyShape{
 	
 	private int length;
 	private int height;

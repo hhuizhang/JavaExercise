@@ -1,6 +1,6 @@
 package chapter5.ObjectOrientedDesignPrinciples.AbstractFactoryPattern;
 
-public class PrinterFriendlyRectangle implements PrinterFriendlyShape {
+class PrinterFriendlyRectangle implements PrinterFriendlyShape {
     
 	private int length;
 	private int height;

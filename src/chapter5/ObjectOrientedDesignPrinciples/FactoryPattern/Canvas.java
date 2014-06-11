@@ -3,7 +3,7 @@ package chapter5.ObjectOrientedDesignPrinciples.FactoryPattern;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-public class Canvas {
+class Canvas {
 	private ArrayList<Shape> shapeList = new ArrayList<Shape>();
 	
 	public void addNewShape(SourceType shapeType){

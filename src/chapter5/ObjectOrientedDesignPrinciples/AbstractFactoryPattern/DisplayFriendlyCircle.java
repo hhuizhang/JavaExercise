@@ -1,6 +1,6 @@
 package chapter5.ObjectOrientedDesignPrinciples.AbstractFactoryPattern;
 
-public class DisplayFriendlyCircle implements DisplayFriendlyShape{
+class DisplayFriendlyCircle implements DisplayFriendlyShape{
     
 	private int xPos, yPos;
 	private int radius;

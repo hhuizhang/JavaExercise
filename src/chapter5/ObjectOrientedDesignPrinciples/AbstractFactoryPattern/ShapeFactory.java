@@ -3,7 +3,8 @@ package chapter5.ObjectOrientedDesignPrinciples.AbstractFactoryPattern;
 enum ShapeType{
 	Circle,Rectangle
 }
-public interface ShapeFactory {
+
+interface ShapeFactory {
 	
 	public Shape getShape(ShapeType shapeType);
 	

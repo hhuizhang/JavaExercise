@@ -1,6 +1,6 @@
 package chapter5.ObjectOrientedDesignPrinciples.AbstractFactoryPattern;
 
-public class PrinterFriendlyCircle implements PrinterFriendlyShape{
+class PrinterFriendlyCircle implements PrinterFriendlyShape{
 	private int xPos, yPos;
 	private int radius;
 	

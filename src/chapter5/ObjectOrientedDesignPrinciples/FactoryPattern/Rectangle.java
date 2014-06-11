@@ -1,6 +1,6 @@
 package chapter5.ObjectOrientedDesignPrinciples.FactoryPattern;
 
-public class Rectangle implements Shape {
+class Rectangle implements Shape {
 	
 	private int length;
 	private int height;

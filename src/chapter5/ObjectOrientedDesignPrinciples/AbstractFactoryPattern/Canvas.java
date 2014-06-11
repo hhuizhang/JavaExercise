@@ -3,10 +3,6 @@ package chapter5.ObjectOrientedDesignPrinciples.AbstractFactoryPattern;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import chapter5.ObjectOrientedDesignPrinciples.FactoryPattern.Shape;
-import chapter5.ObjectOrientedDesignPrinciples.FactoryPattern.ShapeFactory;
-
-
 enum FriendlyType{
 	Display,Printer
 }
@@ -25,9 +21,6 @@ public class Canvas {
 			 Shape shape2 = (Shape) printer.getShape(shapeType);
 			 shapeList.add(shape2);
 		 }
-		 
-			Shape shape = ShapeFactory.getShape(shapeType);
-			shapeList.add(shape);
 	 }
 	 
 		public void redraw(){

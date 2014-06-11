@@ -1,6 +1,6 @@
 package chapter5.ObjectOrientedDesignPrinciples.AbstractFactoryPattern;
 
-public class PrinterFriendlyFactory implements ShapeFactory {
+class PrinterFriendlyFactory implements ShapeFactory {
 
 	@Override
 	public Shape getShape(ShapeType shapeType) {
