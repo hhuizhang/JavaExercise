@@ -1,5 +1,0 @@
-Hadoop is comprised of two main pieces ¨C the storage layer, Hadoop Distributed File System (HDFS), and the massively data-parallel processing engine built on MapReduce (M/R) framework. The storage layer provides efficient and reliable storage of data and the processing engine (using M/R) ensures efficient execution of user jobs. This runtime engine provides the execution environment for running MapReduce workloads or jobs, while the File System sits on top of the operating system and is optimized for reading and writing big blocks of data sets (64 to 128MB).
-
-Typical Hadoop applications utilize the storage and data-parallel processing. Most commonly, there are ¡°feeds¡± of data that are pushed into the Hadoop store and jobs run periodically (similar to SQL queries) to operate on that data.
-
-eBay¡¯s Hadoop platform manages data and makes the jobs run reliably and efficiently providing an efficient solution for analyzing large, complex unstructured and semi-structured data sets ubiquities in today¡¯s online world.

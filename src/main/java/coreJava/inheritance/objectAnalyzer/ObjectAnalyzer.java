@@ -1,0 +1,69 @@
+/**
+ * Alipay.com Inc.
+ * Copyright (c) 2004-2018 All Rights Reserved.
+ */
+package coreJava.inheritance.objectAnalyzer;
+
+import java.lang.reflect.AccessibleObject;
+import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.ArrayList;
+
+/**
+ *
+ * @author catherine
+ * @version $Id: ObjectAnalyzer.java, v 0.1 2018Äê03ÔÂ18ÈÕ 17:49 catherine Exp $
+ */
+public class ObjectAnalyzer {
+
+    private ArrayList<Object> visited = new ArrayList<>();
+
+    public String toString(Object obj){
+        if(obj == null) return "null";
+        if(visited.contains(obj)) return "...";
+        visited.add(obj);
+        Class cl = obj.getClass();
+        if(cl == String.class) return (String)obj;
+        if(cl.isArray()){
+            String r = cl.getComponentType() + "[]{";
+            for(int i = 0;i< Array.getLength(obj);i++){
+                if(i > 0) r += ",";
+                Object val = Array.get(obj,i);
+                if(cl.getComponentType().isPrimitive()) return r += val;
+                else r += toString(val);
+            }
+            return r + "}";
+        }
+
+        String r = cl.getName();
+        do{
+            r += "[";
+            Field[] fields = cl.getDeclaredFields();
+            AccessibleObject.setAccessible(fields,true);
+            for(Field f:fields){
+                if(!Modifier.isStatic(f.getModifiers())){
+                    if(!r.endsWith("[")) r += ",";
+                    r += f.getName() + "=";
+
+                    try {
+                        Class t = f.getType();
+                        Object val = f.get(obj);
+                        if(t.isPrimitive()) r += val;
+                        else r += toString(val);
+                    } catch (IllegalAccessException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+            }
+            r +="]";
+            cl = cl.getSuperclass();
+
+        }while(cl != null);
+        return r;
+
+    }
+
+}
