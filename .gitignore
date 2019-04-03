@@ -20,6 +20,9 @@ target/
 mule.log
 velocity.log
 
+.idea
+*.idea/
+
 # Generated files
 /bin/
 bin/
