@@ -33,4 +33,5 @@ app/test/message.log
 app/test/message_result.log
 dalgen/kbshield/velocity.log.1
 
+/Users/catherine/workspace/JavaExercise/.idea/workspace.xml
 .gitignore
